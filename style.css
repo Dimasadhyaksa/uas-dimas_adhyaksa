@@ -61,7 +61,7 @@ nav a {
 /* ================= HERO ================= */
 .hero {
   height: 100vh;
-  background: url("/images/Background.jpg")
+  background: url("images/Background.jpg")
     center / cover no-repeat;
   position: relative;
   display: flex;
@@ -559,5 +559,61 @@ tbody tr {
 @media (max-width: 500px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Signature Programs */
+.signature {
+  margin-top: 80px;
+}
+
+.signature h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.signature-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.signature-card:hover {
+  transform: translateY(-8px);
+}
+
+.signature-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.signature-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.signature-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .signature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 13px;
   }
 }
