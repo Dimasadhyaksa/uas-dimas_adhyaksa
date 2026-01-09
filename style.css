@@ -1,0 +1,563 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #000;
+  /* color: #fff; */
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #111;
+}
+
+.logo strong {
+  color: #ff6b35;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-reservasi {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  background: url("/images/Background.jpg")
+    center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #ff6b35;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #ff6b35;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid #ff6b35;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+/* ================= STATS ================= */
+.stats {
+  background: #2e3248;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ff6b35;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 40px;
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+.section-title span {
+  color: #ff6b35;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  background: #fff;
+  padding: 80px;
+  color: #222;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+
+.company-story h3,
+.trainers h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.company-story p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.vision-mission {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  background: #f4f6f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box h4 {
+  color: #ff6b35;
+  margin-bottom: 10px;
+}
+
+/* Trainers */
+.trainer-list {
+  display: flex;
+  gap: 25px;
+}
+
+.trainer-card {
+  text-align: center;
+}
+
+.trainer-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6b35;
+  margin-bottom: 10px;
+}
+
+.trainer-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= VALUES ================= */
+.values {
+  background: #f8fafc;
+  padding: 80px;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
+
+.value-card .icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* ================= PROGRAM ================= */
+.program {
+  padding: 80px;
+  background: #fff;
+  color: #000;
+}
+
+.program-table h3,
+.signature h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+}
+
+thead {
+  background: #2e3248;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 16px;
+  font-size: 14px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+/* Signature */
+.signature {
+  margin-top: 80px;
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.signature-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.signature-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #2e3248;
+  padding: 60px 80px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+.footer-brand span {
+  color: #ff6b35;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .about-container,
+  .signature-grid,
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 0 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Kontak & Lokasi */
+.contact-location {
+  background: #ffffff;
+  padding: 80px;
+}
+
+.contact-location .section-title span {
+  color: #ff6b35;
+}
+
+.contact-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+/* Cabang */
+.branches h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.branch-card {
+  background: #f6f8fa;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.branch-card h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.branch-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Map */
+.map-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.map-box {
+  background: linear-gradient(135deg, #2e3248, #00bcd4);
+  color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.map-box:hover {
+  transform: translateY(-6px);
+}
+
+.map-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Contact Info */
+.contact-info h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fasilitas Kami */
+.facilities {
+  background: #ffffff;
+  padding: 80px;
+  text-align: center;
+}
+
+.facilities .section-title span {
+  color: #ff6b35;
+}
+
+.facility-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.facility-card {
+  background: #ffffff;
+  padding: 28px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+}
+
+.facility-card .icon {
+  font-size: 26px;
+}
+
+.facility-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Photo Gallery */
+.gallery {
+  background: #f8fafc;
+  padding: 80px;
+}
+
+.gallery .section-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
